@@ -3,6 +3,12 @@
   "displayName": "Emojicode",
   "description": "Utilities for working with Emojicode programs",
   "version": "0.0.1",
+  "icon": "icon.png",
+  "publisher": "CalebDenio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cjdenio/vscode-emojicode.git"
+  },
   "engines": {
     "vscode": "^1.46.0"
   },
