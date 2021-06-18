@@ -1,12 +1,32 @@
 {
-  "If": {
+  "if": {
     "prefix": "if",
     "body": ["↪️ $1 🍇", "\t$0", "🍉"],
     "description": "If statement"
   },
-  "Print": {
+  "else": {
+    "prefix": "else",
+    "body": ["🙅 $1 🍇", "\t$0", "🍉"],
+    "description": "Else statement"
+  },
+  "for-in": {
+    "prefix": "for-in",
+    "body": ["🔂 $1 $2 🍇", "\t$0", "🍉"],
+    "description": "For-in"
+  },
+  "repeat-while": {
+    "prefix": ["while", "repeat"],
+    "body": ["🔁 ${1:👍} 🍇", "\t$0", "🍉"],
+    "description": "Repeat while"
+  },
+  "Print string": {
     "prefix": "printstr",
     "body": "😀🔤$1🔤❗️",
+    "description": "Print string literal"
+  },
+  "Print": {
+    "prefix": "print",
+    "body": "😀$1❗️",
     "description": "Print string literal"
   },
   "Main block": {
