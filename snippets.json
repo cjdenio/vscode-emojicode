@@ -1,0 +1,16 @@
+{
+  "If": {
+    "prefix": "if",
+    "body": ["↪️ $1 🍇", "\t$0", "🍉"],
+    "description": "If statement"
+  },
+  "Print": {
+    "prefix": "printstr",
+    "body": "😀🔤$1🔤❗️",
+    "description": "Print string literal"
+  },
+  "Main block": {
+    "prefix": "main",
+    "body": ["🏁🍇", "\t$0", "🍉"]
+  }
+}
