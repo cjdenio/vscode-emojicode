@@ -2,7 +2,7 @@
   "name": "vscode-emojicode",
   "displayName": "Emojicode",
   "description": "Utilities for working with Emojicode programs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "icon": "icon.png",
   "publisher": "CalebDenio",
   "repository": {
