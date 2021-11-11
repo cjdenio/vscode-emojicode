@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Emojicode",
+  "patterns": [
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#comments"
+    }
+  ],
+  "repository": {
+    "strings": {
+      "name": "string.quoted.double.emojicode",
+      "begin": "🔤",
+      "end": "🔤",
+      "patterns": [
+        {
+          "name": "constant.character.escape.emojicode",
+          "match": "❌."
+        },
+        {
+          "name": "meta.template.expression.emojicode",
+          "begin": "🧲",
+          "end": "🧲"
+        }
+      ]
+    },
+    "numbers": {
+      "name": "constant.numeric.emojicode",
+      "match": "(\\d+|\\d{1,3}(,\\d{3})*)(\\.\\d+)?"
+    },
+    "comments": {
+      "patterns": [
+        {
+          "include": "#line-comments"
+        },
+        {
+          "include": "#block-comments"
+        },
+        {
+          "include": "#doc-comments"
+        }
+      ]
+    },
+    "line-comments": {
+      "name": "comment.line.emojicode",
+      "begin": "💭",
+      "end": "\n"
+    },
+    "block-comments": {
+      "name": "comment.block.emojicode",
+      "begin": "💭🔜",
+      "end": "🔚💭"
+    },
+    "doc-comments": {
+      "name": "comment.block.documentation.emojicode",
+      "begin": "📗",
+      "end": "📗"
+    }
+  },
+  "scopeName": "source.emojicode"
+}

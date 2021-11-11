@@ -45,6 +45,13 @@
         "command": "vscode-emojicode.runProgram",
         "enablement": "editorLangId == emojicode"
       }
+    ],
+    "grammars": [
+      {
+        "language": "emojicode",
+        "scopeName": "source.emojicode",
+        "path": "./syntaxes/emojicode.tmLanguage.json"
+      }
     ]
   },
   "scripts": {
