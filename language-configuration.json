@@ -1,17 +1,29 @@
 {
   "comments": {
-    "lineComment": "💭",
-    "blockComment": ["💭🔜", "🔚💭"]
+      // symbol used for single line comment
+      "lineComment": "💭",
+      // symbols used for start and end a block comment
+      "blockComment": [ "💭🔜", "🔚💭" ]
   },
-  "brackets": [["🍇", "🍉"]],
+  // symbols used as brackets
+  "brackets": [
+      ["🍇", "🍉"],
+      ["🤜", "🤛"]
+  ],
+  // symbols that are auto closed when typing
   "autoClosingPairs": [
-    {
-      "open": "🔤",
-      "close": "🔤"
-    },
-    {
-      "open": "🍇",
-      "close": "🍉"
-    }
+      ["🍇", "🍉"],
+      ["🤜", "🤛"],
+      ["🔤", "🔤"],
+      ["🧲", "🧲"],
+      ["📗", "📗"]
+  ],
+  // symbols that can be used to surround a selection
+  "surroundingPairs": [
+      ["🍇", "🍉"],
+      ["🤜", "🤛"],
+      ["🔤", "🔤"],
+      ["🧲", "🧲"],
+      ["📗", "📗"]
   ]
 }
