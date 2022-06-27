@@ -1,11 +1,12 @@
 import * as vscode from "vscode";
 import * as fs from "fs";
 import * as os from "os";
+import * as path from "path";
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand("vscode-emojicode.runProgram", async () => {
-      const dir = await fs.promises.mkdtemp(os.tmpdir());
+      const dir = await fs.promises.mkdtemp(path.join(os.tmpdir(),"emojic-"));
       const file = vscode.window.activeTextEditor?.document.fileName;
 
       await vscode.window.activeTextEditor?.document.save();
